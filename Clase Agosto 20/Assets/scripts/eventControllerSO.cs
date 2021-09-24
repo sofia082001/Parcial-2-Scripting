@@ -7,26 +7,11 @@ using UnityEngine.Events;
 [CreateAssetMenu]
 public class eventControllerSO : ScriptableObject
 {
+    public delegate void CambieColor();
+    public event CambieColor cambieColor;
 
-    public delegate void CambieColorAzul();
-    public event CambieColorAzul cambieColorAzul;
-
-    public delegate void CambieColorRojo();
-    public event CambieColorRojo cambieColorRojo;
-
-    //public event UnityAction cambiaColor;
-    //public event UnityAction<float> cambiaTamano;
-
-    public void CambiarColorEspheraAzul()
+    public void Cambiar_color()
     {
-        cambieColorAzul?.Invoke();
+        cambieColor?.Invoke();
     }
-    public void CambiarColorEspheraRojo()
-    {
-        cambieColorRojo?.Invoke();
-    }
-
-
-
-
 }
