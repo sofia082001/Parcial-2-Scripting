@@ -2,23 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 public class sphereController : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Renderer renderlEsfera;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
-    }
-    public void CambiarTamano(Single valor)
-    {
-        transform.localScale = Vector3.one * valor*10;
+        renderlEsfera = gameObject.GetComponent<Renderer>();
     }
 }
