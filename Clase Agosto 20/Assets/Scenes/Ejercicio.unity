@@ -434,7 +434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventoCambiaColor: {fileID: 11400000, guid: eb0af8392446d97449e5e4a9adbbe0b7, type: 2}
-  botonr: {fileID: 1455644533}
   renderlEsfera: {fileID: 0}
 --- !u!1 &448376592
 GameObject:
@@ -1513,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1561525251
 RectTransform:
   m_ObjectHideFlags: 0

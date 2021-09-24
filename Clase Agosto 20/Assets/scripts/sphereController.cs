@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class sphereController : MonoBehaviour
 {
     [SerializeField] eventControllerSO eventoCambiaColor;
-    [SerializeField] Button botonr;
+
 
     IChangeColor _estadoActual;
 
@@ -26,13 +26,10 @@ public class sphereController : MonoBehaviour
     {
         eventoCambiaColor.cambieColor -= CambiarColor;
     }
-
     public void CambiarColor()
     {
-        if (botonr.CompareTag("red"))
-        {
-            _estadoActual = new Estado_Rojo();
-            _estadoActual.ColorCambiar(this);
-        }
+        _estadoActual = new Estado_Rojo();
+        _estadoActual.ColorCambiar(this);
+
     }
 }
