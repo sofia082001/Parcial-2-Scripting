@@ -8,12 +8,7 @@ using UnityEngine.UI;
 public class sphereController : MonoBehaviour
 {
     [SerializeField] eventControllerSO eventoCambiaColor;
-    [SerializeField] Button botonr;
-
-    IChangeColor _estadoActual;
-
     public Renderer renderlEsfera;
-
     private void Start()
     {
         renderlEsfera = gameObject.GetComponent<Renderer>();
@@ -26,12 +21,16 @@ public class sphereController : MonoBehaviour
     {
         eventoCambiaColor.cambieColor -= CambiarColor;
     }
-
     public void CambiarColor()
     {
+<<<<<<< HEAD
 
         _estadoActual = new Estado_Rojo();
         _estadoActual.ColorCambiar(this);
 
+=======
+        renderlEsfera.material.color = Color.red;
+        Debug.Log("entre en estado rojo");
+>>>>>>> main
     }
 }
