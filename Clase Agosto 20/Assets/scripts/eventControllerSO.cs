@@ -10,28 +10,16 @@ public class eventControllerSO : ScriptableObject
     public delegate void CambieColor();
     public event CambieColor cambieColor;
 
-<<<<<<< Updated upstream
+    public delegate void ToggleActivity();
+    public event ToggleActivity toggleActivity;
+
     public void Cambiar_color()
-=======
-    public delegate void CambieColorAzul();
-    public event CambieColorAzul cambieColorAzul;
-
-    public delegate void CambieColorRojo();
-    public event CambieColorRojo cambieColorRojo;
-
-    public delegate void CambieColor();
-    public event CambieColor cambieColor; 
-
-    //public event UnityAction cambiaColor;
-    //public event UnityAction<float> cambiaTamano;
-
-    public void CambiarColorEspheraAzul()
-    {
-        cambieColorAzul?.Invoke();
-    }
-    public void CambiarColorEspheraRojo()
->>>>>>> Stashed changes
     {
         cambieColor?.Invoke();
+    }
+
+    public void ToggleActivity_()
+    {
+        toggleActivity?.Invoke();
     }
 }

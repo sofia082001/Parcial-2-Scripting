@@ -29,10 +29,9 @@ public class sphereController : MonoBehaviour
 
     public void CambiarColor()
     {
-        if (botonr.CompareTag("red"))
-        {
-            _estadoActual = new Estado_Rojo();
-            _estadoActual.ColorCambiar(this);
-        }
+
+        _estadoActual = new Estado_Rojo();
+        _estadoActual.ColorCambiar(this);
+
     }
 }
