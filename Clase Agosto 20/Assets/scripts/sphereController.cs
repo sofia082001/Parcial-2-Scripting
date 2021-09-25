@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class sphereController : MonoBehaviour
 {
     [SerializeField] eventControllerSO eventoCambiaColor;
-    GameObject esfera;
     public Renderer renderlEsfera;
     private void Start()
     {
